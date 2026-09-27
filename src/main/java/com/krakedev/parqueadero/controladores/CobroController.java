@@ -26,7 +26,8 @@ public class CobroController {
 	//Procesa la salida del vehículo y devuelve el ticket generado en formato JSON.
 	@PostMapping("/procesar/{placa}/{horas}")
     public TicketCobro procesarSalida(@PathVariable String placa, @PathVariable int horas) {
-        return servicioCobro.procesarSalida(placa, horas);
+        return servicioCobro.procesarSalida(placa, horas); 
+        
     }
 	
 	//GET /cobros/total: Retorna el monto acumulado total recaudado.
