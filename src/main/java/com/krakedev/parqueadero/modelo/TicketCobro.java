@@ -14,14 +14,13 @@ public class TicketCobro {// 4. clase Ticketcobro
     private LocalDate fechaSalida;
     
     //Constructor, getters, setters y sobrescritura de toString().
-	public TicketCobro(String codigoTicket, Vehiculo vehiculo, int horas, double totalPagar, LocalDate fechaSalida) {
-		super();
-		this.codigoTicket = codigoTicket;
-		this.vehiculo = vehiculo;
-		this.horas = horas;
-		this.totalPagar = totalPagar;
-		this.fechaSalida = fechaSalida;
-	}
+    public TicketCobro(String codigoTicket, Vehiculo vehiculo, int horas, double totalPagar) {
+        this.codigoTicket = codigoTicket;
+        this.vehiculo = vehiculo;
+        this.horas = horas;
+        this.totalPagar = totalPagar;
+        this.fechaSalida = LocalDate.now();
+    }
 	
 	//geters y setters
 
